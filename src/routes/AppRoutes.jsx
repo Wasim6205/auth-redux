@@ -10,6 +10,8 @@ import { addUser } from "../features/authSlice";
 import { useEffect } from "react";
 import PublicProtected from "./protected/PublicProtected";
 import MainProtected from "./protected/MainProtected";
+import ShopPage from "../pages/ShopPage";
+import AboutPage from "../pages/AboutPage";
 
 const AppRoutes = () => {
   const dispatch = useDispatch();
@@ -59,6 +61,14 @@ const AppRoutes = () => {
               path: "",
               element: <HomePage />,
             },
+            {
+              path: "shop",
+              element: <ShopPage />
+            },
+            {
+              path: "about",
+              element: <AboutPage />
+            }
           ],
         },
       ],
