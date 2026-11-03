@@ -7,8 +7,6 @@ const ShopPage = () => {
 
     const {data,error,isPending,filteredProducts} = useProductApi()
 
-    if(error) return <h1>{error.message}</h1>
-
   return (
     <div className="min-h-screen bg-black p-8">
     <Filters />
